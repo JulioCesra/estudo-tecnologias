@@ -1,0 +1,237 @@
+<!--
+    Tópico: formatação e estilos.
+    ✅ HTML Styles - Estilos inline
+    ✅ HTML Formatting - Formatação de texto    
+    ✅ HTML Quotations - Citações
+    ✅ HTML Colors - Cores (para o mapa)
+    ✅ HTML CSS - CSS básico
+    ✅ HTML Links - Links de navegação
+    ✅ HTML Images - Imagens estáticas
+    ✅ HTML Favicon - Ícone do site
+    ✅ HTML Page Title - Título da página
+
+    --------------Estilos-----------------------------------
+    - Atributo de estilo HTML
+        <tagname style="property:value;">
+    
+    - Definir cor de fundo
+        style="background-color:powderblue;"
+    - Definir cor do texto
+        style="color:(cor em inglês);"
+    - Definir fonte do texto
+        style="font-family:(fonte);"
+    - Centralizar texto na página
+        style="text-align:center;"
+    - Colocar borda no texto
+        <style="border:(tamanho) solid (cor)"
+    ------------Formatação de Texto------------------------
+    - Colocar o texto em negrito
+        <b>texto</b>
+    - Colocar texto importante
+        <strong>texto</strong>
+    - Colocar em itálico
+        <i>texto</i>
+    - Colocar texto em formato pequeno
+        <small>texto</small>
+    - Colocar o texto em destaque
+        <mark>texto</mark>
+    - Colocar texto com linha no meio
+        <del>texto</del>
+    - Colocar texto com linha em baixo
+        <ins>texto</ins>
+    - Colocar texto com palavra pequena e no lado do texto
+        <sub>texto</sub>
+    - Colocar texto em cima do texto
+        <sup>texto</sup>
+    
+    ------------------------Quotations e Citation----------------------
+    - Indicar que o texto é uma citação longa de outra fonte
+        <blockquote cite="(link)">texto</blockquote>
+    - Definir uma citação curta embutida
+        <q>citacao curta</q>
+    - Definir abreviação ou sigla
+        <abbr title="Sigla traduzida">teste</abbr>
+    - Definir informação de contato de um autor ou documento ou artigo
+        <address>
+            texto<br>
+            texto<br>
+        </address>
+    - Definir um título de um trabalho criativo
+        <p><cite>TEXTO</cite>texto</p>
+    ---------------------------------------------------------------------
+    - Links em HTML:
+        sintaxe:
+            <a href="url">nome do link</a>
+        Atributos target:
+            _self - Default -> Abre o documento na mesma janela que foi clicado
+            _blank - Abre o documento em uma nova janela.
+            _parent -
+            _top - Abre o documento em tela cheia na janela.  
+        Criando âncoras com links:
+            - Primeiro definir um id para o elemento:
+                <h2 id='qualquer nome'>texto</h2>
+            - Criar um link que aponta para o id:
+                <a href="#idutilizado">texto </a>
+    ----------------------------------------------------------------------
+    - Imagens em HTML
+        sintaxe:
+            <img src='fonte da imagem' alt='texto alternativo'>
+        Image Maps -> criar áreas onde é possível clicar em imagens
+            - Definindo o tipo de formato do item que vai ser clicado:
+                rect -> área retângular
+                circle -> área de um círculo
+                poly -> região com polinómio
+        Fundo com imagens:
+            <p style="background-image: url(url);">
+    ------------------------------------------------------------------------
+    Adicionar icon no titulo da pagina
+                <link rel='icon' type='image/x-icon' href='url'>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formatação e Estilos</title>
+    <link rel="icon" type="image/x-icon" href="gato.jpeg">
+</head>
+
+<body style="background-color: darkolivegreen;">
+
+    <h1 id="TituloInicial" style="background-color: brown; font-size: 60px; font-family: 'Courier New', Courier, monospace; text-align: center;">
+        Site com fundo verde
+    </h1>
+
+    <p style="background-color: darkgoldenrod; font-size: 20px; color: darkviolet;">
+        Esse paragráfo é um teste
+    </p>
+
+    <b>
+        Texto em negrito
+    </b>
+
+    <strong>
+        <br>
+        Texto importante
+    </strong>
+
+    <i>
+        <br>
+        Texto em itálico
+    </i>
+
+    <small>
+        <br>
+        Texto pequeno
+    </small>
+
+    <p>
+        <br>
+        Texto com palavra <mark>Gato</mark> marcada
+    </p>
+
+    <p>
+        <br>
+        Texto com del <del> azul </del>
+    </p>
+
+    <p>
+        Texto <ins>ins</ins>
+    </p>
+
+    <p>
+        Isso é um texto com <sub>sub</sub>
+    </p>
+
+    <p>
+        Isso é um texto com <sup>sub</sup>
+    </p>
+
+    <p>
+        Teste de blockquote
+    </p>
+    <blockquote cite="https://pt.wikipedia.org/wiki/Roblox">
+        Roblox é um site criado na data ...., feito pelo programador ...
+    </blockquote>
+
+    <p>
+        Como disse o autor Júlio César <q>
+            Prefiro programar Python do que em HTML....
+        </q>
+    </p>
+
+    <p>
+        Teste de sigla <abbr title="Organização das Nações Unidas">ONU</abbr>
+    </p>
+
+    <address>
+        Escrito por Júlio César <br>
+        Me visite em:<br>
+        JulioProgramador.com<br>
+        mar do meio, marlandia<br>
+        BRASIL
+    </address>
+
+    <p>
+        <cite>
+            Minecraft
+        </cite>
+        Texto
+    </p>
+
+    <p style="border: 2px solid red;">
+        paragráfo com borda vermelha
+    </p>
+
+    <h2>
+        Testes links
+    </h2>
+
+    <a href="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fforget-valentines-day-choose-a-cat-to-be-your-friend-v0-zzlmmlvav8ie1.png%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D5373c9dde1baa406cf439e0670898d0d8a5df575", target="_self">
+        Usando _self
+    </a>
+    <br>
+    <a href="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fforget-valentines-day-choose-a-cat-to-be-your-friend-v0-zzlmmlvav8ie1.png%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D5373c9dde1baa406cf439e0670898d0d8a5df575", target="_blank">
+        Usando _blank
+    </a>
+    <br>
+    <a href="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fforget-valentines-day-choose-a-cat-to-be-your-friend-v0-zzlmmlvav8ie1.png%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D5373c9dde1baa406cf439e0670898d0d8a5df575", target="_parent">
+        Usando _parent
+    </a>
+    <br>
+    <a href="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fforget-valentines-day-choose-a-cat-to-be-your-friend-v0-zzlmmlvav8ie1.png%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D5373c9dde1baa406cf439e0670898d0d8a5df575", target="_top">
+        Usando _top
+    </a>
+    <br>
+    <a href="#TituloInicial">
+        Clique nesse link para voltar para o inicio
+    </a>
+    <br>
+    <img src="gato.jpeg" alt="gato na guerra" style="width: 400px; height: 400px; float:right;">
+
+    <img src="gato.jpeg" alt="gato na guerra" usemap="#gatomap">
+
+    <map name="gatomap">
+        <area shape="rect" coords="0,0">
+
+    </map>
+
+    <p style="background-image: url('gato.jpeg');">
+        c
+        <br>
+        c
+        <br>
+        c
+        <br>
+        c
+        <br>
+        c
+        <br>
+        
+
+        
+
+    </p>
+</body>
+
+</html>
