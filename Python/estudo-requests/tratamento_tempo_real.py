@@ -178,6 +178,7 @@ class tratamento_arquivos():
             self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {nome_arquivo}. Causa: Arquivo não encontrado na pasta dos arquivos brutos!')
     def teste():
         print('ola')
+        print('s')
         pass
     
 if __name__ == '__main__':
