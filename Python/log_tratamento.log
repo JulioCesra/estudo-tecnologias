@@ -1,0 +1,137 @@
+2025-12-09 20:09:02,847 - TRATAMENTO - INFO - Iniciando a função tratamento_arquivos_csv_IBGE_SIDRA...
+2025-12-09 20:09:02,847 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:02,847 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: area_territorial_do_municipio_em_km2.csv.
+2025-12-09 20:09:02,868 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,869 - TRATAMENTO - INFO - SUCESSO: Linha '219' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:02,872 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:02,872 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,872 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:02,875 - TRATAMENTO - ERROR - FALHA: Não foi possível converter 'Ano' para Int64. Erro: cannot safely cast non-equivalent object to int64
+2025-12-09 20:09:02,875 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 0 coluna(s) convertida(s).
+2025-12-09 20:09:02,875 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: area_territorial_do_municipio_em_km2.csv.
+2025-12-09 20:09:02,876 - TRATAMENTO - INFO - Revertendo a formatação da coluna 'area_territorial_do_municipio_em_km2' para usar vírgula decimal.
+2025-12-09 20:09:02,879 - TRATAMENTO - INFO - Arquivo area_territorial_do_municipio_em_km2_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:02,880 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:02,880 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: densidade_demografica_por_municipio_em_km2.csv.
+2025-12-09 20:09:02,898 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,899 - TRATAMENTO - INFO - SUCESSO: Linha '219' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:02,902 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:02,902 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,902 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:02,904 - TRATAMENTO - ERROR - FALHA: Não foi possível converter 'Ano' para Int64. Erro: cannot safely cast non-equivalent object to int64
+2025-12-09 20:09:02,904 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 0 coluna(s) convertida(s).
+2025-12-09 20:09:02,905 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: densidade_demografica_por_municipio_em_km2.csv.
+2025-12-09 20:09:02,905 - TRATAMENTO - INFO - Revertendo a formatação da coluna 'densidade_demografica_por_municipio_em_km2' para usar vírgula decimal.
+2025-12-09 20:09:02,909 - TRATAMENTO - INFO - Arquivo densidade_demografica_por_municipio_em_km2_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:02,909 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:02,909 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: idade_mediana_por_municipio.csv.
+2025-12-09 20:09:02,928 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,929 - TRATAMENTO - INFO - SUCESSO: Linha '219' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:02,931 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:02,931 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,931 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:02,933 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano' (tipo anterior: float64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:02,933 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:02,934 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: idade_mediana_por_municipio.csv.
+2025-12-09 20:09:02,935 - TRATAMENTO - INFO - Arquivo idade_mediana_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:02,936 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:02,936 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: percentual_de_envelhecimento_por_municipio.csv.
+2025-12-09 20:09:02,954 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,955 - TRATAMENTO - INFO - SUCESSO: Linha '219' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:02,957 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:02,957 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,958 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:02,959 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano' (tipo anterior: float64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:02,959 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:02,960 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: percentual_de_envelhecimento_por_municipio.csv.
+2025-12-09 20:09:02,961 - TRATAMENTO - INFO - Revertendo a formatação da coluna 'percentual_de_envelhecimento_por_municipio' para usar vírgula decimal.
+2025-12-09 20:09:02,963 - TRATAMENTO - INFO - Arquivo percentual_de_envelhecimento_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:02,964 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:02,964 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios.csv.
+2025-12-09 20:09:02,981 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,982 - TRATAMENTO - INFO - SUCESSO: Linha '220' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:02,985 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:02,985 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,985 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:02,987 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano x Sexo' (tipo anterior: int64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:02,987 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:02,988 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios.csv.
+2025-12-09 20:09:02,989 - TRATAMENTO - INFO - Arquivo pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:02,990 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:02,990 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv.
+2025-12-09 20:09:02,994 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,995 - TRATAMENTO - INFO - SUCESSO: Linha '18' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:02,997 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:02,998 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:02,998 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:02,999 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano x Cor ou raça x Sexo' (tipo anterior: int64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:03,000 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:03,000 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv.
+2025-12-09 20:09:03,002 - TRATAMENTO - INFO - Arquivo populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:03,002 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:03,002 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: população_residente_por_municipio.csv.
+2025-12-09 20:09:03,025 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,026 - TRATAMENTO - INFO - SUCESSO: Linha '219' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:03,028 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:03,028 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,029 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:03,032 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano' (tipo anterior: float64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:03,032 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:03,033 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: população_residente_por_municipio.csv.
+2025-12-09 20:09:03,035 - TRATAMENTO - INFO - Arquivo população_residente_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:03,036 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:03,036 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: quantidade_de_homens_por_municipio.csv.
+2025-12-09 20:09:03,056 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,057 - TRATAMENTO - INFO - SUCESSO: Linha '220' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:03,060 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:03,061 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,061 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:03,063 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano x Sexo x Idade' (tipo anterior: int64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:03,064 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:03,064 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: quantidade_de_homens_por_municipio.csv.
+2025-12-09 20:09:03,066 - TRATAMENTO - INFO - Arquivo quantidade_de_homens_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:03,066 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:03,066 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: quantidade_de_mulheres_por_municipio.csv.
+2025-12-09 20:09:03,091 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,093 - TRATAMENTO - INFO - SUCESSO: Linha '220' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:03,096 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:03,096 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,096 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:03,099 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano x Sexo x Idade' (tipo anterior: int64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:03,099 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:03,100 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: quantidade_de_mulheres_por_municipio.csv.
+2025-12-09 20:09:03,102 - TRATAMENTO - INFO - Arquivo quantidade_de_mulheres_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:03,103 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:03,103 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: quantidade_de_residentes_rurais_por_municipio.csv.
+2025-12-09 20:09:03,133 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,134 - TRATAMENTO - INFO - SUCESSO: Linha '220' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:03,137 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:03,137 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,137 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:03,142 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano x Situação do domicílio' (tipo anterior: int64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:03,142 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:03,143 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: quantidade_de_residentes_rurais_por_municipio.csv.
+2025-12-09 20:09:03,146 - TRATAMENTO - INFO - Arquivo quantidade_de_residentes_rurais_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:03,146 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:03,147 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: quantidade_de_residentes_urbanos_por_municipio.csv.
+2025-12-09 20:09:03,173 - TRATAMENTO - INFO - Iniciando a remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,174 - TRATAMENTO - INFO - SUCESSO: Linha '220' ('Fonte: IBGE') e as subsequentes foram removidas.
+2025-12-09 20:09:03,176 - TRATAMENTO - INFO - SUCESSO: Linhas descartadas antes do primeiro município. Novo DataFrame começa com o Cód. '2100055'.
+2025-12-09 20:09:03,176 - TRATAMENTO - INFO - Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.
+2025-12-09 20:09:03,176 - TRATAMENTO - INFO - Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.
+2025-12-09 20:09:03,178 - TRATAMENTO - INFO - SUCESSO: Coluna 'Ano x Situação do domicílio' (tipo anterior: int64) convertida para 'Float64' (suporte a nulos).
+2025-12-09 20:09:03,178 - TRATAMENTO - INFO - Fim da verificação de tipo. Total de 1 coluna(s) convertida(s).
+2025-12-09 20:09:03,179 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: quantidade_de_residentes_urbanos_por_municipio.csv.
+2025-12-09 20:09:03,181 - TRATAMENTO - INFO - Arquivo quantidade_de_residentes_urbanos_por_municipio_limpo salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:03,181 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:03,181 - TRATAMENTO - INFO - ======================================================================================================================================================
+2025-12-09 20:09:03,182 - TRATAMENTO - INFO - Tempo de execução da função tratamento_arquivos_csv_IBGE_SIDRA: 0.33 segundos
+2025-12-09 20:09:03,182 - TRATAMENTO - INFO - ======================================================================================================================================================
+2025-12-09 20:09:03,182 - TRATAMENTO - INFO - Iniciando a função tratamento_arquivo_percentual_de_alunos_alfabetizados_por_municipio...
+2025-12-09 20:09:03,182 - TRATAMENTO - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 20:09:03,183 - TRATAMENTO - INFO - Iniciando a leitura e tratamento do arquivo: percentual_de_alunos_alfabetizados_por_municipio.xlsx.
+2025-12-09 20:09:03,924 - TRATAMENTO - INFO - Finalização da leitura e tratamento do arquivo: percentual_de_alunos_alfabetizados_por_municipio.xlsx.
+2025-12-09 20:09:03,926 - TRATAMENTO - INFO - Arquivo percentual_de_alunos_alfabetizados_por_municipio_limpo.csv salvo com sucesso na pasta: arquivos-limpos
+2025-12-09 20:09:03,926 - TRATAMENTO - INFO - ======================================================================================================================================================
+2025-12-09 20:09:03,926 - TRATAMENTO - INFO - Tempo de execução da função tratamento_arquivo_percentual_de_alunos_alfabetizados_por_municipio: 0.74 segundos
+2025-12-09 20:09:03,927 - TRATAMENTO - INFO - ======================================================================================================================================================
