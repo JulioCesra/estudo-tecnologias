@@ -105,8 +105,19 @@ class tratamento_arquivos():
                     self.logger_tratamento.info('-'*120)
                 except pd.errors.ParserError as e:
                     self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {arquivo}. Causa: Formatação nos parâmetros do Pandas. {e}')
-    
+                    
+    @auxiliares.funcoes_auxiliares.tempo_de_execucacao(logger=LOGGER_TRATAMENTO_GLOBAL)
+    def tratamento_arquivo_xlsx_INEP(self):
+        for arquivo in self.lista_arquivos_brutos:
+            if arquivo.endswith('.xlsx'):
+                try:
+                    diretorio_arquivo = os.path.join(self.diretorio_arquivos_brutos,arquivo)
+                    df = pd.read_excel(diretorio_arquivo)
+                    print(df.head(5))
+                    print(df.columns)
+                except pd.errors.ParserError as e:
+                    self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {arquivo}. Causa: Formatação nos parâmetros do Pandas. {e}')
 if __name__ == '__main__':
-    tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
-
+    #tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
+    tratamento_arquivos().tratamento_arquivos_xlsx_INEP()
 

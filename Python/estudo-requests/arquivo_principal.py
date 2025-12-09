@@ -10,6 +10,7 @@ urls = {   # Nomes dos arquivos brutos                      Urls
         'quantidade_de_mulheres_por_municipio.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/-2081871684',
         'quantidade_de_residentes_urbanos_por_municipio.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/651000649',
         'quantidade_de_residentes_rurais_por_municipio.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/859488008',
+        'percentual_de_alunos_alfabetizados_por_municipio.xlsx' : 'https://download.inep.gov.br/alfabetiza_brasil/resultados_e_metas_municipios_2024.xlsx'
         #'indice_de_envelhecimento_por_municipio.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/1815440151' -> Ajustar tratamento
         
         #l'area_territorial_municipios.ods' : 'https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/areas_territoriais/2024/AR_BR_RG_UF_RGINT_RGI_MUN_2024.ods'
