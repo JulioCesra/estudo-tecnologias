@@ -9,12 +9,12 @@ class ListaVaziaError(Exception):
     def __init__(self, *args):
         super().__init__(*args)
 
-
 class tratamento_arquivos():
     def __init__(self):    
         self.logger_tratamento = LOGGER_TRATAMENTO_GLOBAL
         self.diretorio_arquivos_brutos = os.path.join('arquivos-brutos')
         os.makedirs('arquivos-limpos',exist_ok=True)
+        self.diretorio_arquivos_limpos = os.path.join('arquivos-limpos')
         try:
             self.lista_arquivos_brutos = os.listdir(self.diretorio_arquivos_brutos)
         except FileNotFoundError:
@@ -26,13 +26,17 @@ class tratamento_arquivos():
         
     @auxiliares.funcoes_auxiliares.tempo_de_execucacao(logger=LOGGER_TRATAMENTO_GLOBAL)
     def tratamento_arquivos_csv_IBGE_SIDRA(self):
-        self.logger_tratamento.info('-'*120)
         for arquivo in self.lista_arquivos_brutos:
             if arquivo.endswith('.csv'):
                 try:
                     diretorio_arquivo = os.path.join(self.diretorio_arquivos_brutos,arquivo)
                     self.logger_tratamento.info(f"Iniciando a leitura e tratamento do arquivo: {arquivo}.")
-                    df = pd.read_csv(diretorio_arquivo, header = 2, skipfooter=12, sep=';',engine='python')
+                    df_header = pd.read_csv(diretorio_arquivo, sep=';', header=None, nrows=2, engine='python')
+
+                    nome_completo_variavel = df_header.iloc[1, 0]
+                    tipo_da_variavel = nome_completo_variavel.split()[-1]
+
+                    df = pd.read_csv(diretorio_arquivo, header = 2, sep=';',engine='python')
 
                     self.logger_tratamento.info("Iniciando a remoção das colunas com valores Nulos e formatação do dataset.")
                     coluna_de_texto_principal = df.columns[0]
@@ -49,14 +53,13 @@ class tratamento_arquivos():
                         self.logger_tratamento.error(f"Erro ao tentar localizar o índice de corte: {e}. Mantendo o DataFrame original.")
                         df_final = df.copy()
 
-                    palavras_na_coluna = ['forma de declaração da idade','unidade da federação e município','município']
+                    palavras_na_coluna = ['forma de declaração da idade','unidade da federação e município','município','brasil e município','grupo de idade']
                     for coluna in df.columns:
                         if coluna.lower() in palavras_na_coluna:
                             df_final = df_final.drop(coluna, axis = 1)
-
                     df_final['Cód.'] = df_final['Cód.'].astype(str).str.strip()
                     mascara_municipio = (df_final['Cód.'].str.len() == 7)
-
+ 
                     try:
                         primeiro_rotulo_indice = mascara_municipio.idxmax()
                         posicao_corte = df_final.index.get_loc(primeiro_rotulo_indice)
@@ -72,52 +75,109 @@ class tratamento_arquivos():
                         
                     self.logger_tratamento.info("Finalização do processo de remoção das colunas com valores Nulos e formatação do dataset.")
 
-                    self.logger_tratamento.info("Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64'.")
-                    
+                    self.logger_tratamento.info("Iniciando a conversão de tipos. Buscando colunas 'ano' ou 'idade' para 'Int64' ou 'Float64'.")
+                
                     colunas_convertidas = 0
                     for coluna in df_final.columns:
                         palavras_na_coluna = coluna.lower().split(sep=' ')
                         if 'ano' in palavras_na_coluna or 'idade' in palavras_na_coluna:
+                            
+                            df_final[coluna] = df_final[coluna].astype(str).str.replace(',', '.', regex=False)
+                            
                             df_final[coluna] = pd.to_numeric(df_final[coluna], errors='coerce')
+                            
                             df_final.dropna(subset=[coluna], inplace=True)
                             dtype_anterior = df_final[coluna].dtype
+                            
+                            if tipo_da_variavel == '(Razão)':
+                                target_dtype = 'Float64'
+                            else:
+                                target_dtype = 'Int64'
+                                
                             try:
-                                df_final[coluna] = df_final[coluna].astype('Int64')
+                                df_final[coluna] = df_final[coluna].astype(target_dtype)
                                 self.logger_tratamento.info(
-                                f"SUCESSO: Coluna '{coluna}' (tipo anterior: {dtype_anterior}) convertida para 'Int64' (suporte a nulos)."
+                                    f"SUCESSO: Coluna '{coluna}' (tipo anterior: {dtype_anterior}) convertida para 'Float64' (suporte a nulos)."
                                 )
+                                
                                 colunas_convertidas += 1
                             except Exception as e:
                                 self.logger_tratamento.error(
-                                    f"FALHA: Não foi possível converter '{coluna}' para Int64. Erro: {e}"
+                                    f"FALHA: Não foi possível converter '{coluna}' para {target_dtype}. Erro: {e}"
                                 )
+                                
                     self.logger_tratamento.info(
                         f"Fim da verificação de tipo. Total de {colunas_convertidas} coluna(s) convertida(s)."
                     )
                     
+                    nome_final_target = arquivo.replace('.csv','')
                     df_final = df_final.rename(columns={df_final.columns[-1] : arquivo.replace('.csv','')})
                     self.logger_tratamento.info(f"Finalização da leitura e tratamento do arquivo: {arquivo}.")
+                    
+                    possiveis_tipos = ['(Razão)','quadrados)','quadrado)']
+                    if tipo_da_variavel in possiveis_tipos or tipo_da_variavel in possiveis_tipos or tipo_da_variavel in possiveis_tipos:
+                        self.logger_tratamento.info(f"Revertendo a formatação da coluna '{nome_final_target}' para usar vírgula decimal.")
+                        df_final[nome_final_target] = df_final[nome_final_target].astype(str).str.replace('.', ',', regex=False)
 
                     nome_arquivo_formatado_e_limpo = arquivo.replace('.csv','_limpo')
                     diretorio_salvamento = Path(f'arquivos-limpos/{nome_arquivo_formatado_e_limpo}.csv')
-                    df_final.to_csv(path_or_buf=diretorio_salvamento, sep=';', index=False)
+                    
+                    df_final.to_csv(path_or_buf=diretorio_salvamento, sep=';', index=False) 
+                      
                     self.logger_tratamento.info(f"Arquivo {nome_arquivo_formatado_e_limpo} salvo com sucesso na pasta: arquivos-limpos")
-                    self.logger_tratamento.info('-'*120)
+                    self.logger_tratamento.info('-'*150)
+                    
                 except pd.errors.ParserError as e:
                     self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {arquivo}. Causa: Formatação nos parâmetros do Pandas. {e}')
                     
     @auxiliares.funcoes_auxiliares.tempo_de_execucacao(logger=LOGGER_TRATAMENTO_GLOBAL)
-    def tratamento_arquivo_xlsx_INEP(self):
-        for arquivo in self.lista_arquivos_brutos:
-            if arquivo.endswith('.xlsx'):
-                try:
-                    diretorio_arquivo = os.path.join(self.diretorio_arquivos_brutos,arquivo)
-                    df = pd.read_excel(diretorio_arquivo)
-                    print(df.head(5))
-                    print(df.columns)
-                except pd.errors.ParserError as e:
-                    self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {arquivo}. Causa: Formatação nos parâmetros do Pandas. {e}')
+    def tratamento_arquivo_percentual_de_alunos_alfabetizados_por_municipio(self):
+        try:
+            nome_arquivo = 'percentual_de_alunos_alfabetizados_por_municipio.xlsx'
+            diretorio_origem_arquivo = os.path.join(self.diretorio_arquivos_brutos,nome_arquivo)
+            self.logger_tratamento.info(f"Iniciando a leitura e tratamento do arquivo: {nome_arquivo}.")
+            df = pd.read_excel(diretorio_origem_arquivo, header=1)
+            colunas_remocao = ['ANO',
+                               'CO_UF',
+                                'SG_UF',
+                                'NO_MUNICIPIO',
+                                'NO_TP_REDE',
+                                'META_FINAL_2024',
+                                'META_FINAL_2025',
+                                'META_FINAL_2026',
+                                'META_FINAL_2027',
+                                'META_FINAL_2028',
+                                'META_FINAL_2029',
+                                'META_FINAL_2030',
+                                'CO_NIVEL_ALFABETIZACAO',
+                                'PC_AVALIADOS_LP']
+            df_limpo = df[df['CO_UF'] == 21]
+            df_limpo = df_limpo.drop(colunas_remocao, axis = 1)
+            
+            colunas_percentual = ['PC_ALUNO_ALFABETIZADO_2023','PC_ALUNO_ALFABETIZADO_2024']
+            
+            for coluna in colunas_percentual:
+                df_limpo[coluna] = df_limpo[coluna].fillna(0.0) 
+                df_limpo[coluna] = (
+                    df_limpo[coluna]
+                    .round(2)
+                    .astype(str)
+                    .str.replace('.', ',', regex=False)
+                )
+                  
+            self.logger_tratamento.info(f"Finalização da leitura e tratamento do arquivo: {nome_arquivo}.")
+            nome_arquivo_tratado = nome_arquivo.replace('.xlsx','_limpo') + '.csv'
+            diretorio_destino_arquivo = os.path.join(self.diretorio_arquivos_limpos,nome_arquivo_tratado)
+            
+            df_limpo.to_csv(diretorio_destino_arquivo, sep=';', index=False)
+            
+            self.logger_tratamento.info(f"Arquivo {nome_arquivo_tratado} salvo com sucesso na pasta: arquivos-limpos")
+        except pd.errors.ParserError as e:
+            self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {nome_arquivo}. Causa: Formatação nos parâmetros do Pandas. {e}')
+        except FileNotFoundError:
+            self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {nome_arquivo}. Causa: Arquivo não encontrado na pasta dos arquivos brutos!')
+
 if __name__ == '__main__':
-    #tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
-    tratamento_arquivos().tratamento_arquivos_xlsx_INEP()
+    tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
+    tratamento_arquivos().tratamento_arquivo_percentual_de_alunos_alfabetizados_por_municipio()
 

@@ -1,14 +1,262 @@
-2025-12-08 22:36:03,739 - COLETA - INFO - Iniciando a funÃ§Ã£o coleta_e_salvamento...
-2025-12-08 22:36:04,392 - COLETA - INFO - Iniciando download de 'populaÃ§Ã£o_residente_por_municipio.csv' (Status: 200).
-2025-12-08 22:36:04,393 - COLETA - INFO - Download e salvamento de 'populaÃ§Ã£o_residente_por_municipio.csv' concluÃ­dos com sucesso em 'arquivos-brutos/populaÃ§Ã£o_residente_por_municipio.csv'.
-2025-12-08 22:36:05,178 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
-2025-12-08 22:36:05,179 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluÃ­dos com sucesso em 'arquivos-brutos/quantidade_de_homens_por_municipio.csv'.
-2025-12-08 22:36:06,384 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
-2025-12-08 22:36:06,385 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluÃ­dos com sucesso em 'arquivos-brutos/quantidade_de_mulheres_por_municipio.csv'.
-2025-12-08 22:36:07,280 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
-2025-12-08 22:36:07,282 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluÃ­dos com sucesso em 'arquivos-brutos/quantidade_de_residentes_urbanos_por_municipio.csv'.
-2025-12-08 22:36:07,929 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
-2025-12-08 22:36:07,930 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluÃ­dos com sucesso em 'arquivos-brutos/quantidade_de_residentes_rurais_por_municipio.csv'.
-2025-12-08 22:36:08,775 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
-2025-12-08 22:36:11,197 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluÃ­dos com sucesso em 'arquivos-brutos/percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
-2025-12-08 22:36:11,199 - COLETA - INFO - Tempo de execuÃ§Ã£o da funÃ§Ã£o coleta_e_salvamento: 7.46 segundos
+2025-12-09 10:38:19,770 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 10:38:19,770 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 10:38:20,560 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 10:38:20,561 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 10:38:21,538 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 10:38:21,539 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 10:38:22,469 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 10:38:22,471 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 10:38:23,178 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 10:38:23,179 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 10:38:23,927 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 10:38:23,929 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 10:38:24,820 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 10:38:27,180 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 10:38:27,181 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 10:38:27,181 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 7.41 segundos
+2025-12-09 10:38:27,182 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 11:02:06,317 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 11:02:06,318 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 11:02:07,180 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 11:02:07,181 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 11:02:08,098 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 11:02:08,099 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 11:02:08,982 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 11:02:08,985 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 11:02:09,730 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 11:02:09,732 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 11:02:10,500 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 11:02:10,501 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 11:02:11,189 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 11:02:13,413 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 11:02:13,415 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 11:02:13,415 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 7.10 segundos
+2025-12-09 11:02:13,415 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 11:16:50,912 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 11:16:50,912 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 11:16:52,507 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 11:16:52,508 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 11:16:53,814 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 11:16:53,815 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 11:16:55,069 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 11:16:55,073 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 11:16:56,176 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 11:16:56,177 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 11:16:56,991 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 11:16:56,992 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 11:16:57,860 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 11:16:58,808 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 11:16:59,560 - COLETA - INFO - Iniciando download de 'indice_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 11:16:59,561 - COLETA - INFO - Download e salvamento de 'indice_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\indice_de_envelhecimento_por_municipio.csv'.
+2025-12-09 11:16:59,563 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 11:16:59,563 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 8.65 segundos
+2025-12-09 11:16:59,563 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 11:57:15,226 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 11:57:15,227 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 11:57:16,097 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 11:57:16,098 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 11:57:17,205 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 11:57:17,206 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 11:57:18,176 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 11:57:18,178 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 11:57:18,891 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 11:57:18,892 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 11:57:19,679 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 11:57:19,680 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 11:57:20,598 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 11:57:21,532 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 11:57:22,698 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 11:57:22,699 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 11:57:22,701 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 11:57:22,701 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 7.47 segundos
+2025-12-09 11:57:22,702 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:20:42,760 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 12:20:42,761 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 12:20:44,044 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 12:20:44,045 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 12:20:44,992 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 12:20:44,993 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 12:20:45,937 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 12:20:45,938 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 12:20:47,040 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 12:20:47,041 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 12:20:47,804 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 12:20:47,805 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 12:20:48,521 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 12:20:49,524 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 12:20:50,298 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 12:20:50,299 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 12:20:50,301 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:20:50,301 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 7.54 segundos
+2025-12-09 12:20:50,301 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:25:39,237 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 12:25:39,237 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 12:25:40,074 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 12:25:40,075 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 12:25:41,023 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 12:25:41,024 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 12:25:41,904 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 12:25:41,905 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 12:25:42,618 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 12:25:42,619 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 12:25:43,320 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 12:25:43,321 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 12:25:44,001 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 12:25:45,762 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 12:25:46,536 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 12:25:46,537 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 12:25:47,220 - COLETA - INFO - Iniciando download de 'idade_mediana_por_municipio.csv' (Status: 200).
+2025-12-09 12:25:47,221 - COLETA - INFO - Download e salvamento de 'idade_mediana_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\idade_mediana_por_municipio.csv'.
+2025-12-09 12:25:47,223 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:25:47,223 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 7.99 segundos
+2025-12-09 12:25:47,223 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:37:34,547 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 12:37:34,547 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 12:37:35,894 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 12:37:35,895 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 12:37:36,826 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 12:37:36,827 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 12:37:37,662 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 12:37:37,663 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 12:37:38,424 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 12:37:38,425 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 12:37:39,138 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 12:37:39,139 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 12:37:39,989 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 12:37:40,910 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 12:37:41,671 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 12:37:41,672 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 12:37:42,430 - COLETA - INFO - Iniciando download de 'idade_mediana_por_municipio.csv' (Status: 200).
+2025-12-09 12:37:42,431 - COLETA - INFO - Download e salvamento de 'idade_mediana_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\idade_mediana_por_municipio.csv'.
+2025-12-09 12:37:43,781 - COLETA - INFO - Iniciando download de 'area_territorial_do_municipio_em_km2' (Status: 200).
+2025-12-09 12:37:43,782 - COLETA - INFO - Download e salvamento de 'area_territorial_do_municipio_em_km2' concluídos com sucesso em 'arquivos-brutos\area_territorial_do_municipio_em_km2'.
+2025-12-09 12:37:43,783 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:37:43,784 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 9.24 segundos
+2025-12-09 12:37:43,784 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:38:38,230 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 12:38:38,230 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 12:38:39,072 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 12:38:39,073 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 12:38:40,095 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 12:38:40,096 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 12:38:41,030 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 12:38:41,031 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 12:38:41,791 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 12:38:41,791 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 12:38:42,669 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 12:38:42,670 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 12:38:43,442 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 12:38:44,706 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 12:38:45,433 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 12:38:45,434 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 12:38:46,197 - COLETA - INFO - Iniciando download de 'idade_mediana_por_municipio.csv' (Status: 200).
+2025-12-09 12:38:46,198 - COLETA - INFO - Download e salvamento de 'idade_mediana_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\idade_mediana_por_municipio.csv'.
+2025-12-09 12:38:47,003 - COLETA - INFO - Iniciando download de 'area_territorial_do_municipio_em_km2' (Status: 200).
+2025-12-09 12:38:47,004 - COLETA - INFO - Download e salvamento de 'area_territorial_do_municipio_em_km2' concluídos com sucesso em 'arquivos-brutos\area_territorial_do_municipio_em_km2'.
+2025-12-09 12:38:47,005 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:38:47,005 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 8.77 segundos
+2025-12-09 12:38:47,006 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:39:06,406 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 12:39:06,407 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 12:39:07,225 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 12:39:07,226 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 12:39:08,092 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 12:39:08,093 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 12:39:09,781 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 12:39:09,782 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 12:39:10,548 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 12:39:10,549 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 12:39:11,339 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 12:39:11,340 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 12:39:12,052 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 12:39:12,673 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 12:39:13,391 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 12:39:13,392 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 12:39:14,153 - COLETA - INFO - Iniciando download de 'idade_mediana_por_municipio.csv' (Status: 200).
+2025-12-09 12:39:14,154 - COLETA - INFO - Download e salvamento de 'idade_mediana_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\idade_mediana_por_municipio.csv'.
+2025-12-09 12:39:15,314 - COLETA - INFO - Iniciando download de 'area_territorial_do_municipio_em_km2.csv' (Status: 200).
+2025-12-09 12:39:15,315 - COLETA - INFO - Download e salvamento de 'area_territorial_do_municipio_em_km2.csv' concluídos com sucesso em 'arquivos-brutos\area_territorial_do_municipio_em_km2.csv'.
+2025-12-09 12:39:15,316 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:39:15,317 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 8.91 segundos
+2025-12-09 12:39:15,317 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:47:55,800 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 12:47:55,800 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 12:47:56,586 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 12:47:56,587 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 12:47:57,525 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 12:47:57,526 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 12:47:58,457 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 12:47:58,458 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 12:47:59,351 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 12:47:59,352 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 12:48:00,106 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 12:48:00,107 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 12:48:00,809 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 12:48:02,190 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 12:48:03,216 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 12:48:03,217 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 12:48:04,001 - COLETA - INFO - Iniciando download de 'idade_mediana_por_municipio.csv' (Status: 200).
+2025-12-09 12:48:04,002 - COLETA - INFO - Download e salvamento de 'idade_mediana_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\idade_mediana_por_municipio.csv'.
+2025-12-09 12:48:05,086 - COLETA - INFO - Iniciando download de 'area_territorial_do_municipio_em_km2.csv' (Status: 200).
+2025-12-09 12:48:05,087 - COLETA - INFO - Download e salvamento de 'area_territorial_do_municipio_em_km2.csv' concluídos com sucesso em 'arquivos-brutos\area_territorial_do_municipio_em_km2.csv'.
+2025-12-09 12:48:05,853 - COLETA - INFO - Iniciando download de 'densidade_demografica_por_municipio_em_km2.csv' (Status: 200).
+2025-12-09 12:48:05,854 - COLETA - INFO - Download e salvamento de 'densidade_demografica_por_municipio_em_km2.csv' concluídos com sucesso em 'arquivos-brutos\densidade_demografica_por_municipio_em_km2.csv'.
+2025-12-09 12:48:05,856 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:48:05,856 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 10.06 segundos
+2025-12-09 12:48:05,857 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:57:42,174 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 12:57:42,174 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 12:57:43,405 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:43,406 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 12:57:45,651 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:45,652 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 12:57:46,611 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:46,613 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 12:57:48,347 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:48,348 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 12:57:49,095 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:49,096 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 12:57:49,780 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 12:57:50,510 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 12:57:51,212 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:51,213 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 12:57:51,903 - COLETA - INFO - Iniciando download de 'idade_mediana_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:51,904 - COLETA - INFO - Download e salvamento de 'idade_mediana_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\idade_mediana_por_municipio.csv'.
+2025-12-09 12:57:52,598 - COLETA - INFO - Iniciando download de 'area_territorial_do_municipio_em_km2.csv' (Status: 200).
+2025-12-09 12:57:52,599 - COLETA - INFO - Download e salvamento de 'area_territorial_do_municipio_em_km2.csv' concluídos com sucesso em 'arquivos-brutos\area_territorial_do_municipio_em_km2.csv'.
+2025-12-09 12:57:53,638 - COLETA - INFO - Iniciando download de 'densidade_demografica_por_municipio_em_km2.csv' (Status: 200).
+2025-12-09 12:57:53,639 - COLETA - INFO - Download e salvamento de 'densidade_demografica_por_municipio_em_km2.csv' concluídos com sucesso em 'arquivos-brutos\densidade_demografica_por_municipio_em_km2.csv'.
+2025-12-09 12:57:54,387 - COLETA - INFO - Iniciando download de 'populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv' (Status: 200).
+2025-12-09 12:57:54,388 - COLETA - INFO - Download e salvamento de 'populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv'.
+2025-12-09 12:57:54,389 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 12:57:54,390 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 12.21 segundos
+2025-12-09 12:57:54,390 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 13:25:02,652 - COLETA - INFO - Iniciando a função coleta_e_salvamento...
+2025-12-09 13:25:02,652 - COLETA - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------
+2025-12-09 13:25:03,512 - COLETA - INFO - Iniciando download de 'população_residente_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:03,513 - COLETA - INFO - Download e salvamento de 'população_residente_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\população_residente_por_municipio.csv'.
+2025-12-09 13:25:04,494 - COLETA - INFO - Iniciando download de 'quantidade_de_homens_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:04,495 - COLETA - INFO - Download e salvamento de 'quantidade_de_homens_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_homens_por_municipio.csv'.
+2025-12-09 13:25:05,479 - COLETA - INFO - Iniciando download de 'quantidade_de_mulheres_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:05,481 - COLETA - INFO - Download e salvamento de 'quantidade_de_mulheres_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_mulheres_por_municipio.csv'.
+2025-12-09 13:25:06,246 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_urbanos_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:06,247 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_urbanos_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_urbanos_por_municipio.csv'.
+2025-12-09 13:25:07,071 - COLETA - INFO - Iniciando download de 'quantidade_de_residentes_rurais_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:07,072 - COLETA - INFO - Download e salvamento de 'quantidade_de_residentes_rurais_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\quantidade_de_residentes_rurais_por_municipio.csv'.
+2025-12-09 13:25:07,996 - COLETA - INFO - Iniciando download de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' (Status: 200).
+2025-12-09 13:25:08,910 - COLETA - INFO - Download e salvamento de 'percentual_de_alunos_alfabetizados_por_municipio.xlsx' concluídos com sucesso em 'arquivos-brutos\percentual_de_alunos_alfabetizados_por_municipio.xlsx'.
+2025-12-09 13:25:09,760 - COLETA - INFO - Iniciando download de 'percentual_de_envelhecimento_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:09,762 - COLETA - INFO - Download e salvamento de 'percentual_de_envelhecimento_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\percentual_de_envelhecimento_por_municipio.csv'.
+2025-12-09 13:25:10,909 - COLETA - INFO - Iniciando download de 'idade_mediana_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:10,910 - COLETA - INFO - Download e salvamento de 'idade_mediana_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\idade_mediana_por_municipio.csv'.
+2025-12-09 13:25:12,122 - COLETA - INFO - Iniciando download de 'area_territorial_do_municipio_em_km2.csv' (Status: 200).
+2025-12-09 13:25:12,123 - COLETA - INFO - Download e salvamento de 'area_territorial_do_municipio_em_km2.csv' concluídos com sucesso em 'arquivos-brutos\area_territorial_do_municipio_em_km2.csv'.
+2025-12-09 13:25:12,925 - COLETA - INFO - Iniciando download de 'densidade_demografica_por_municipio_em_km2.csv' (Status: 200).
+2025-12-09 13:25:12,926 - COLETA - INFO - Download e salvamento de 'densidade_demografica_por_municipio_em_km2.csv' concluídos com sucesso em 'arquivos-brutos\densidade_demografica_por_municipio_em_km2.csv'.
+2025-12-09 13:25:13,675 - COLETA - INFO - Iniciando download de 'populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv' (Status: 200).
+2025-12-09 13:25:13,677 - COLETA - INFO - Download e salvamento de 'populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv' concluídos com sucesso em 'arquivos-brutos\populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv'.
+2025-12-09 13:25:14,570 - COLETA - INFO - Iniciando download de 'pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios.csv' (Status: 200).
+2025-12-09 13:25:14,571 - COLETA - INFO - Download e salvamento de 'pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios.csv' concluídos com sucesso em 'arquivos-brutos\pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios.csv'.
+2025-12-09 13:25:14,572 - COLETA - INFO - ======================================================================================================================================================
+2025-12-09 13:25:14,572 - COLETA - INFO - Tempo de execução da função coleta_e_salvamento: 11.92 segundos
+2025-12-09 13:25:14,573 - COLETA - INFO - ======================================================================================================================================================
