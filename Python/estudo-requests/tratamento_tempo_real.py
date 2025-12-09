@@ -179,6 +179,7 @@ class tratamento_arquivos():
     def teste():
         print('ola')
         print('s')
+        print('TESTANDO BRANCHS')
         pass
 if __name__ == '__main__':
     tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
