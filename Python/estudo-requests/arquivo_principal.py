@@ -16,8 +16,8 @@ urls = {   # Nomes dos arquivos brutos                      Urls
         'area_territorial_do_municipio_em_km2.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/-1946607256',
         'densidade_demografica_por_municipio_em_km2.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/1382453315',
         'populacao_residente_em_favelas_e_comunidades_urbanas_por_municipio.csv' : 'https://sidra.ibge.gov.br/geratabela?format=br.csv&name=tabela9884.csv&terr=NC&rank=-&query=t/9884/n1/all/n6/2108603,2107506,2111201,2111300,2112506,2109908,2103000,2105401,2112209,2105302,2114007,2100055,2102325,2109452/v/allxp/p/all/c86/95251/c2/6794/c58/95253/l/v,p%2Bc86%2Bc2,t%2Bc58',
-        'pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/-2107715763'
-        
+        'pessoas_de_2_anos_ou_mais_com_deficiencia_por_municipios.csv' : 'https://sidra.ibge.gov.br/geratabela/DownloadSelecaoComplexa/-2107715763',
+        #'indice_de_desenvolvimento_humano_por_municipio.xlsx' : 'blob:http://www.atlasbrasil.org.br/2bdce7f8-dfdd-4405-b250-f915d9d74baf'
         
         #l'area_territorial_municipios.ods' : 'https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/areas_territoriais/2024/AR_BR_RG_UF_RGINT_RGI_MUN_2024.ods'
     }
