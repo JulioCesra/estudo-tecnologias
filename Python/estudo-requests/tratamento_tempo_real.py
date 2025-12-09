@@ -180,7 +180,9 @@ class tratamento_arquivos():
         print('ola')
         print('s')
         pass
-    
+    def teste2():
+        print('oi')
+        pass
 if __name__ == '__main__':
     tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
     tratamento_arquivos().tratamento_arquivo_percentual_de_alunos_alfabetizados_por_municipio()
