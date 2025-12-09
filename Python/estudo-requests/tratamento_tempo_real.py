@@ -177,6 +177,7 @@ class tratamento_arquivos():
         except FileNotFoundError:
             self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {nome_arquivo}. Causa: Arquivo não encontrado na pasta dos arquivos brutos!')
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     def teste():
         print('ola')
         print('s')
@@ -184,6 +185,9 @@ class tratamento_arquivos():
     def teste2():
         print('oi')
         pass
+=======
+   
+>>>>>>> Stashed changes
 =======
    
 >>>>>>> Stashed changes
