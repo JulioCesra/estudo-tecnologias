@@ -177,6 +177,7 @@ class tratamento_arquivos():
         except FileNotFoundError:
             self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {nome_arquivo}. Causa: Arquivo não encontrado na pasta dos arquivos brutos!')
 #teste
+#TesteBranchJulio
 
 if __name__ == '__main__':
     tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
