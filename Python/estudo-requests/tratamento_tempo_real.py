@@ -176,11 +176,8 @@ class tratamento_arquivos():
             self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {nome_arquivo}. Causa: Formatação nos parâmetros do Pandas. {e}')
         except FileNotFoundError:
             self.logger_tratamento.critical(f'ERROR CRÍTICO. Falha ao acessar o arquivo: {nome_arquivo}. Causa: Arquivo não encontrado na pasta dos arquivos brutos!')
-    def teste():
-        print('ola')
-        print('s')
-        print('TESTANDO BRANCHS')
-        pass
+
+
 if __name__ == '__main__':
     tratamento_arquivos().tratamento_arquivos_csv_IBGE_SIDRA()
     tratamento_arquivos().tratamento_arquivo_percentual_de_alunos_alfabetizados_por_municipio()
